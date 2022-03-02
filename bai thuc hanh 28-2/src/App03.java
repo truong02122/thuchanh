@@ -1,27 +1,35 @@
 import java.util.Scanner;
 
-public class App3{
-    
-    public static void main(String args[])
-    {
-        int temp;
-        boolean isPrime=true;
-        Scanner scan= new Scanner(System.in);
-        System.out.println("Nhập vào số cần kiểm tra:");
-        int num=scan.nextInt();
-        scan.close();
-        for(int i=2;i<=num/2;i++)
-        {
-            temp=num%i;
-            if(temp==0)
-            {
-                isPrime=false;
-                break;
-            }
-        }
-        if(isPrime)
-            System.out.println(num + " Là số nguyên tố!");
-        else
-            System.out.println(num + " Không phải là số nguyên tố!");
-    }
+public class App3 {
+	public static boolean check(int n){
+		if(n<2)
+		{
+			return false;
+		}
+		for(int i=2;i< n;i++)
+		{
+			if(n%i==0)
+			return false;
+		}
+		return true;
+	}
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int  n;
+		do{
+			System.out.println("Nhap so nguyen duong: ");
+			n=sc.nextInt();	
+		}
+		while(n<=0);
+		sc.close();
+		if(check(n))
+		{
+			System.out.println(n+" la so nguyen to");
+		}
+		else
+		{
+			System.out.println(n+" khong la so nguyen to");
+		}
+	}
+
 }

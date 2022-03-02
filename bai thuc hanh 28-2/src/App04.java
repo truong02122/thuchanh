@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class App4 {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        System.out.print("Nhập n = ");
+        System.out.print("Nhap n = ");
         int n = scanner.nextInt();
-        System.out.printf("Tất cả các số nguyên tố nhỏ hơn %d là: \n", n);
+        System.out.printf("Tat ca so nguyen to nho hon %d la: \n", n);
         if (n >= 2) {
             System.out.print(2);
         }
@@ -16,11 +16,9 @@ public class App4 {
         }
     }
     public static boolean isPrimeNumber(int n) {
-        // so nguyen n < 2 khong phai la so nguyen to
         if (n < 2) {
             return false;
         }
-        // check so nguyen to khi n >= 2
         int squareRoot = (int) Math.sqrt(n);
         for (int i = 2; i <= squareRoot; i++) {
             if (n % i == 0) {

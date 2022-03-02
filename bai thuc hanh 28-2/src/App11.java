@@ -10,7 +10,7 @@ public class App11 {
 			{
 				for(int k=0;k<=4;k++)
 					if(i*10 + j*20 + k*50==200)
-					{	System.out.println(i+" to 10k   "+ j +" to 20k   "+k+"  to 50k" );
+					{	System.out.println(i +"to10k "+ j +"to20k "+ k +"to50k "  );
 						dem++;
 					}
 			}
