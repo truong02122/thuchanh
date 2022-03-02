@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class App11 {
 
 	public static void main(String[] args) {
-		int i,j,k;
+		int a=10,b=20,c=50;
 		int dem=0;
 		for(int i=0;i<=20;i++)
 			{
