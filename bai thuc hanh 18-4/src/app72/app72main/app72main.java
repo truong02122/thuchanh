@@ -1,13 +1,13 @@
 package app72main;
 
-import sinhvien.SinhVien;
+import sinhvien.sinhvien;
 
 public class app72main {
 
 	public static void main(String[] args) {
 		// Khởi tạo các đối tượng sinhVien
-		SinhVien sinhVien1 = new SinhVien();
-		SinhVien sinhVien2 = new SinhVien();
+		sinhvien sinhVien1 = new sinhvien();
+		sinhvien sinhVien2 = new sinhvien();
 
 		// Set thông tin vào cho các sinh viên
 		sinhVien1.setTen("");

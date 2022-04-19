@@ -1,6 +1,6 @@
 package sinhvien;
 
-public class SinhVien {
+public class sinhvien {
     private String ten;
     private String tuoi;
 
