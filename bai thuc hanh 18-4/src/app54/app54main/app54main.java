@@ -19,7 +19,7 @@ public class app54main {
 		hinhtru.xuatten();
 		hinhtru.nhapchieucao();
 		hinhtru.tinhthetich();
-		hinhtru.tinhthetich();
+		hinhtru.inthetich();
 		//hình chữ nhật
 		hinhchunhat hinhchunhat=new hinhchunhat();
 		hinhchunhat.xuatten();
@@ -28,7 +28,7 @@ public class app54main {
 		hinhchunhat.tinhchuvi();
 		hinhchunhat.tinhdientich();
 		hinhchunhat.indientich();
-		hinhchunhat.inthetich();
+		hinhchunhat.inchuvi();
 		//hình vuông
 		hinhvuong hinhvuong=new hinhvuong();
 		hinhvuong.xuatten();
