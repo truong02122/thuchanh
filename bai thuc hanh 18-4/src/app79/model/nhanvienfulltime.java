@@ -1,18 +1,18 @@
 package model;
 
 import java.util.Scanner;
-import util.Configs;
+import util.configs;
 
-public class NhanVienFullTime extends NhanVien {
+public class nhanvienfulltime extends nhanvien {
 	private Scanner scanner;
 	private int ngayLamThem;
 	private int loaiChucVu;
 
-	public NhanVienFullTime(String ten) {
+	public nhanvienfulltime(String ten) {
 		this.ten = ten;
 	}
 
-	public NhanVienFullTime(String ten, int ngayLamThem) {
+	public nhanvienfulltime(String ten, int ngayLamThem) {
 		this.ten = ten;
 		this.ngayLamThem = ngayLamThem;
 	}
@@ -28,18 +28,18 @@ public class NhanVienFullTime extends NhanVien {
 	}
 
 	public void tinhLuong() {
-		if (loaiChucVu == Configs.NHAN_VIEN_LINH) {
+		if (loaiChucVu == configs.NHAN_VIEN_LINH) {
 			if (ngayLamThem >= 1) {
-				luong = Configs.LUONG_NHAN_VIEN_FULL_TIME_LINH + ngayLamThem * 800000;
+				luong = configs.LUONG_NHAN_VIEN_FULL_TIME_LINH + ngayLamThem * 800000;
 			} else {
-				luong = Configs.LUONG_NHAN_VIEN_FULL_TIME_LINH;
+				luong = configs.LUONG_NHAN_VIEN_FULL_TIME_LINH;
 			}
 
 		} else {
 			if (ngayLamThem >= 1) {
-				luong = Configs.LUONG_NHAN_VIEN_FULL_TIME_SEP + ngayLamThem * 800000;
+				luong = configs.LUONG_NHAN_VIEN_FULL_TIME_SEP + ngayLamThem * 800000;
 			} else {
-				luong = Configs.LUONG_NHAN_VIEN_FULL_TIME_SEP;
+				luong = configs.LUONG_NHAN_VIEN_FULL_TIME_SEP;
 			}
 		}
 	}

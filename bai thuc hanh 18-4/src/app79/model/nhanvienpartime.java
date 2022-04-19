@@ -1,10 +1,10 @@
 package model;
 
-import util.Configs;
+import util.configs;
 
-public class NhanVienPartTime extends NhanVien {
+public class nhanvienpartime extends nhanvien {
     private int gioLamViec;
-    public NhanVienPartTime(String ten, int gioLamViec){
+    public nhanvienpartime(String ten, int gioLamViec){
         this.ten = ten;
         this.gioLamViec = gioLamViec;
     }
@@ -13,7 +13,7 @@ public class NhanVienPartTime extends NhanVien {
         return "Nhan vien thoi vu";
     }
     public void tinhLuong(){
-        luong = Configs.LUONG_NHAN_VIEN_PART_TIME_MOI_GIO * gioLamViec;
+        luong = configs.LUONG_NHAN_VIEN_PART_TIME_MOI_GIO * gioLamViec;
     }
     public void xuatThongTin(){
         System.out.println("ten nhan vien : " + ten);

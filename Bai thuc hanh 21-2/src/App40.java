@@ -1,7 +1,7 @@
 import java.util.Scanner;
-public class SwitchDemo {
+public class App40 {
  public static void main(String agre[]) {
- Scanner scan=newScanner  (System.in);
+ Scanner scan=new Scanner  (System.in);
  int ngay=scan.nextInt();
  switch(ngay) {
      case 0: System.out.println("chu nhat");

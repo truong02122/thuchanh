@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class App30 {
     public static void main(String[] args)  {
     int n, sodu, tong = 0;
@@ -10,4 +12,5 @@ while (n > 0) {
     tong += sodu;
 }
 System.out.println("tong cac chu so =" + tong);
+}
 }

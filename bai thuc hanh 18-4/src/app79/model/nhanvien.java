@@ -1,13 +1,13 @@
 package model;
 
-public class NhanVien {
+public class nhanvien {
     protected String ten;
     protected long luong;
 
-    public NhanVien(){
+    public nhanvien(){
 
     }
-    public NhanVien(String ten){
+    public nhanvien(String ten){
         this.ten = ten;
     }
     protected String loaiNhanVien(){
