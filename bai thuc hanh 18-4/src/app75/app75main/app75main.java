@@ -9,7 +9,7 @@ public class app75main {
 			hinhtron hinhtron1 = new hinhtron();
 			hinhtron hinhtron2 = new hinhtron();
 			hinhchunhat hinhchunhat = new hinhchunhat();
-			System.out.println("co tat cac" + hinhhoc.dem + "hinh trong ung dung");
+			System.out.println("co tat ca " + hinhhoc.dem + " hinh trong ung dung");
 
 		}
 	}
