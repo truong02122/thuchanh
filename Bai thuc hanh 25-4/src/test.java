@@ -24,6 +24,13 @@ public class test {
 		a1.sleep();
 		a1.roar();
 		System.out.println("_______________");
+		animal a3=new tiger();
+		a3.eat();
+		a3.run();
+		a3.walk();
+		a3.sleep();
+		a3.roar();
+		System.out.println("_______________");
 		animal a2=new dog();
 		a2.eat();
 		a2.run();
