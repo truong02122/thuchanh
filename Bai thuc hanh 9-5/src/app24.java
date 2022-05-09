@@ -2,32 +2,32 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class app24 {
-public static void main(String[] args) {
+	public static void main(String[] args) {
         ArrayList<Integer> arrListInteger=new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        int number; // pháº§n tá»­ cá»§a máº£ng
+        int number; // phần tử của mảng
 
-        System.out.println("Nháº­p sá»‘ pháº§n tá»­ cá»§a ArrayList: ");
+        System.out.println("Nhập số phần tử của ArrayList: ");
         int n = scanner.nextInt();
-       // nháº­p vÃ  thÃªm pháº§n tá»­ cho ArrayList
+       // nhập và thêm phần tử cho ArrayList
         for (int i = 0; i < n; i++){
-            System.out.print("Nháº­p pháº§n tá»­ thá»©" + i + ":");
+            System.out.print("Nhập phần tử thứ" + i + ":");
             number = scanner.nextInt();
             arrListInteger.add(number);
         }
-       // tÃ¬m pháº§n tá»­ lá»›n nháº¥t trong máº£ng sá»­ dá»¥ng phÆ°Æ¡ng thá»©c compareTo()
-       // giÃ¡ sá»­ pháº§n tá»« lá»›n nháº¥t lÃ  pháº§n tá»­ Ä‘áº§u tiÃªn trong ArrayList
+       // tìm phần tử lớn nhất trong mảng sử dụng phương thức compareTo()
+        // giá sử phần từ lớn nhất là phần tử đầu tiên trong ArrayList
         int max = arrListInteger.get(0);
 
         for (int i = 1; i < arrListInteger.size(); i++){
-        // náº¿u káº¿t quáº£ cá»§a phÃ©p so sÃ¡nh nÃ y lá»›n hÆ¡ne
-        // tá»©c biáº¿n max nhá»� hÆ¡n pháº§n tá»­ táº¡i vá»‹ trÃ­ thá»©itrong ArrayList
-        // thÃ¬ gÃ¡n max=pháº§n tá»« táº¡i vá»‹ trÃ­i
-        // vÃ  Ä‘Ã³ chÃ­nh lÃ  pháº§n tá»­ lá»›n nháº¥t
+            // nếu kết quả của phép so sánh này lớn hơne
+            // tức biến max nhỏ hơn phần tử tại vị trí thứitrong ArrayList
+           // thì gán max=phần từ tại vị tríi
+           // và đó chính là phần tử lớn nhất
             if (arrListInteger.get(i).compareTo(max) > 0){
                 max = arrListInteger.get(i);
             }
         }
-        System.out.println("Pháº§n tá»­ lá»›n nháº¥t trong arrListInteger = "+ max);
+        System.out.println("Phần tử lớn nhất trong arrListInteger = "+ max);
 }
 }

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.ListIterator;
 
 public class app19{
-public static void main(String[] args){
+	public static void main(String[] args){
         // khai báo1ArrayList có tên là arrlistChar
        // có kiểu là Character
         ArrayList<Character> arrlistChar=new ArrayList<>();
