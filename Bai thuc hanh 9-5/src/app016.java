@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class app16 {
+public class app016 {
 	public static void main(String[] args) {
 	    // khai báo1ArrayList có tên là arrlistString
 	   // có kiểu là String
