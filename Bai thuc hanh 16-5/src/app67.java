@@ -1,5 +1,4 @@
 import java.util.TreeSet;
-import java.util.Set;
 import java.util.Scanner;
 public class app67 {
 public static void main(String[] args) {
